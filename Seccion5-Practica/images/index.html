@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta para una escuela</title>
+  <link rel="stylesheet" href="style.css">
+<body>
+  <div class="fondo-pantalla">
+    <h1 id="title">Encuesta para una escuela</h1>
+  <p id="description">Esto es una encuesta para saber como esta la educacion en un grupo de personas</p>
+   <div class="fondo-formulario">
+     <form id="survey-form">
+    <fieldset class="datos-personales">
+      <legend>Datos Personales</legend>
+      <label id="name-label" for="name">Nombre: <input id="name" type="text" required placeholder="rafael"></label>
+    <label  id="email-label" for="email" >Email: <input id="email" type="email" required placeholder="example@gmail.com"></label>
+    <label id="number-label" for="age">Edad: <input id="number" type="number" required min="10" max="30" placeholder="10"></label>
+    </fieldset>
+    
+   <fieldset>
+  <legend>Nivel educativo</legend>
+  <label for="dropdown">¿Qué estás estudiando actualmente?</label><br>
+  <select id="dropdown" name="nivel">
+    <option>Primaria</option>
+    <option>Secundaria</option>
+    <option>Preparatoria</option>
+    <option>Universidad</option>
+  </select>
+</fieldset>
+
+  <fieldset>
+    <legend>Actualmente trabajas?</legend>
+    <label for="si-trabajo"><input type="radio" id="si-trabajo" name="trabajas" value="si-trabajo"> Si</label>
+    <label id="no-trabajo"><input type="radio" id="no-trabajo" name="trabajas" checked value="no-trabajo"> No</label>
+  </fieldset>
+  <fieldset>
+    <label>Que estas estudiando o que te gustaria estudiar cuando seas grande</label>
+    <label><input type="checkbox" value="Medecina"> Medecina<label>
+    <label><input type="checkbox" value="Derecho"> Derecho<label>
+    <label><input type="checkbox" value="Ingenieria en Sistemas"> Ingenieria en Sistemas<label>
+    <label><input type="checkbox" value="Ingenieria en Electronica"> Ingenieria en Electronica<label>
+    <label><input type="checkbox" value="Ingenierio Agronomo"> Ingenierio Agronomo<label>
+    <label><input type="checkbox" value="Licenciatura"> Licenciatura<label>
+  </fieldset>
+  <fieldset class="comentarios">
+    <label>Ingresa algunos comentarios adicionales
+      <textarea rows=10></textarea>
+    </label>
+  </fieldset>
+   <input id="submit" type="submit" value="Submit" />
+  </form>
+
+   </div>
+  </div>
+</body>
+</head>
+</html>
+
