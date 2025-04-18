@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a23;
+    color: aliceblue;
+    line-height: 1.6;
+}
+
+main {
+    width: 80%;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #11182b;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.1);
+}
+
+#title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fb4f14;
+} 
+
+#img-div {
+    background-color: #1a2238;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#img-caption {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #b0c4de;
+}
+
+#tribute-info {
+    padding: 10px 0;
+}
+
+#tribute-info h2 {
+    font-size: 1.8rem;
+    color: #fb4f14;
+    border-bottom: 2px solid #fb4f14;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.seccion {
+    margin-bottom: 30px;
+}
+
+.seccion h3 {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.seccion h4 {
+    font-size: 1.2rem;
+    color: #87cefa;
+    margin-top: 10px;
+}
+
+.seccion p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.premios {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.premios li {
+    margin-bottom: 8px;
+    color: #f0e68c;
+}
+
+#tribute-link {
+    font-size: 1rem;
+    color: #fb4f14;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#tribute-link:hover {
+    border-color: #fb4f14;
+    color: #ffd700;
+}
