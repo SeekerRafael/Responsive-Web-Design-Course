@@ -1,74 +1,74 @@
 body {
-    background-image: url('https://static.videezy.com/system/resources/thumbnails/000/055/044/original/dark-blue-bg-3.jpg');
-     background-color: rgba(2, 9, 15, 0.7); 
-    background-blend-mode: lighten;
-  }
-  
-  h1, p {
-    color: #ffffff;
-    text-align: center;
-  }
-  
-  p, legend {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    font-size: 1.2rem;
-    margin-top: 20px
-    
-  }
-  
-  legend{
-    font-weight: bold;
-  }
-  
-  .fondo-formulario {
-    background-color: rgb(5, 11, 62);
-    color: #ffffff;
-    max-width: 700px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-  }
-  
-  label, .datos-personales input, .comentarios textarea, #dropdown, #submit  {
-    display: block;
-    width: 100%;
-  
-  }
-  
-  .datos-personales input, #dropdown{
-    height: 30px;
-    border-radius: 10px;
-    margin-top: 8px;
-  
-  }
-  
-  fieldset{
-    border: none;
-    border-bottom: 2px solid #1515b2;
-    margin-top: 10px;
-  }
-  
-  input[type="checkbox"]{
-    margin-top:10px;
-  }
-  
-  #submit{
-    background-color: #1515b2;
-    height: 50px;
-    border-radius: 10px;
-    border-color: none;
-  }
-  
-  textarea{
-    margin-top: 12px;
-    border-color: #06f8f8;
-  }
-  
-  
-  
-  
+  background-image: url("https://static.videezy.com/system/resources/thumbnails/000/055/044/original/dark-blue-bg-3.jpg");
+  background-color: rgba(2, 9, 15, 0.7);
+  background-blend-mode: lighten;
+}
+
+h1,
+p {
+  color: #ffffff;
+  text-align: center;
+}
+
+p,
+legend {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.fondo-formulario {
+  background-color: rgb(5, 11, 62);
+  color: #ffffff;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+label,
+.datos-personales input,
+.comentarios textarea,
+#dropdown,
+#submit {
+  display: block;
+  width: 100%;
+}
+
+.datos-personales input,
+#dropdown {
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 2px solid #1515b2;
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  margin-top: 10px;
+}
+
+#submit {
+  background-color: #1515b2;
+  height: 50px;
+  border-radius: 10px;
+  border-color: none;
+}
+
+textarea {
+  margin-top: 12px;
+  border-color: #06f8f8;
+}
