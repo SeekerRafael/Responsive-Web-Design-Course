@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentación CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Propiedades de CSS</header>
+      <a class="nav-link" href="#Color">Color</a>
+      <a class="nav-link" href="#Background_color">Background color</a>
+      <a class="nav-link" href="#Margin">Margin</a>
+      <a class="nav-link" href="#Padding">Padding</a>
+      <a class="nav-link" href="#Display">Display</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Color">
+        <header>Color</header>
+        <p>La propiedad <code>color</code> define el color del texto.</p>
+        <p>
+          Puede aceptar valores en palabras clave, hexadecimales, rgb, rgba, hsl
+          y hsla.
+        </p>
+        <code>p { color: red; }</code>
+        <ul>
+          <li>color: red;</li>
+          <li>color: #333333;</li>
+          <li>color: rgb(0,0,0);</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Background_color">
+        <header>Background color</header>
+        <p>
+          La propiedad <code>background-color</code> establece el color de fondo
+          de un elemento.
+        </p>
+        <p>También acepta valores similares a <code>color</code></p>
+        <code>div { background-color: lightblue; }</code>
+        <ul>
+          <li>background-color: white;</li>
+          <li>background-color: #f1f1f1;</li>
+          <li>background-color: rgba(255, 255, 0, 0.2);</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Margin">
+        <header>Margin</header>
+        <p>
+          La propiedad <code>margin</code> define el espacio exterior de un
+          elemento.
+        </p>
+        <p>Puede establecerse en una, dos, tres o cuatro direcciones.</p>
+        <code>div { margin: 10px 20px; }</code>
+        <ul>
+          <li>margin: 0;</li>
+          <li>margin: 10px;</li>
+          <li>margin: 10px 20px 30px 40px;</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Padding">
+        <header>Padding</header>
+        <p>
+          La propiedad <code>padding</code> define el espacio interno de un
+          elemento.
+        </p>
+        <p>Funciona igual que <code>margin</code>, pero hacia adentro.</p>
+        <code>section { padding: 20px; }</code>
+        <ul>
+          <li>padding: 5px;</li>
+          <li>padding: 10px 15px;</li>
+          <li>padding: 10px 10px 20px 0;</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Display">
+        <header>Display</header>
+        <p>
+          La propiedad <code>display</code> especifica cómo se comporta un
+          elemento en el flujo del documento.
+        </p>
+        <p>Aquí se muestran ejemplos visuales de algunos valores comunes:</p>
+
+        <h4>display: flex</h4>
+        <div class="demo-flex">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+        </div>
+
+        <h4>display: grid</h4>
+        <div class="demo-grid">
+          <div class="box">A</div>
+          <div class="box">B</div>
+          <div class="box">C</div>
+        </div>
+
+        <h4>Animación simple (hover)</h4>
+        <div class="animated-box">Pasa el mouse aquí</div>
+
+        <code>div { display: flex; }</code>
+        <ul>
+          <li>display: block;</li>
+          <li>display: inline;</li>
+          <li>display: flex;</li>
+          <li>display: grid;</li>
+          <li>display: none;</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

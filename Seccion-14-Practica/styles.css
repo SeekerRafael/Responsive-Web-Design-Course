@@ -1,0 +1,159 @@
+:root {
+  --bg: #121212;
+  --text: #e0e0e0;
+  --accent: #1e88e5;
+  --code-bg: #1f1f1f;
+  --box-bg: #2e7d32;
+  --hover: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: #1c1c1c;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  border-right: 1px solid #333;
+}
+
+#navbar header {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--hover);
+}
+
+#main-doc {
+  margin-left: 260px;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+.main-section {
+  margin-bottom: 2.5rem;
+}
+
+.main-section header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+code {
+  background-color: var(--code-bg);
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: block;
+  margin: 0.8rem 0;
+  font-family: monospace;
+  color: #90caf9;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+.demo-flex,
+.demo-grid {
+  margin: 1rem 0;
+  gap: 10px;
+}
+
+.demo-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.box {
+  background-color: var(--box-bg);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 80px;
+}
+
+.animated-box {
+  background-color: var(--accent);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.animated-box:hover {
+  transform: scale(1.05) rotate(2deg);
+  background-color: #1565c0;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    border-right: none;
+    border-bottom: 1px solid #333;
+  }
+
+  .nav-link {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
